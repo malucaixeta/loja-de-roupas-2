@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo img {
+    max-width: 160px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+    color: #EE1C47;
+}
+
+section {
+    padding: 10% 10%;
+}
+
+.pagina-principal {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/banner.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.texto-principal h5 {
+    color: #EE1C47;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.texto-principal h1 {
+    color: black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6x 0 10px;
+}
+
+.texto-principal p {
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.botao-principal {
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.botao-principal:hover {
+    background-color: black;
+    color: white;
+}
+
+.final-texto {
+    background-color: #edfff1;
+    text-align: center;
+    padding: 20px;
+}
+
+.final-texto p {
+    color: #111;
+    text-transform: capitalize;
+
+}
+
+header {
+    background: #fff;
+    padding: 10px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+@media(max-width:890px) {
+    header {
+        padding: 20px 3%;
+    }
+}
+
+@media(max-width:630px) {
+    .texto-principal h1 {
+        font-size: 50px;
+    }
+
+    .texto-principal p {
+        font-size: 18px;
+    }
+
+    .botão-principal {
+        padding: 10px 20px;
+    }
+
+    .navmenu {
+        display: inline-block;
+    }
+
+    .navmenu li {
+        padding: 10px 0px 10px 0px;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 23px;
+    color: #111;
+    border-bottom: 2px solid #5f5f5f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section p,
+.section ul {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #EE1C47;
+}
+
+.centro-texto h1 {
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.produto {
+    position: relative;
+    transition: all .40s;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.produto img:hover {
+    transform: scale(0.9);
+}
+
+.preço h4 {
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.preço p {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ver-detalhes {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ver-detalhes:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+
+.produto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagem-maior {
+    max-width: 50%;
+    padding: 6% 10%;
+    height: auto;
+    transition: all .40s;
+}
+
+.produto-info {
+    max-width: 600px;
+    text-align: center;
+}
+
+.produto-info h1 {
+    margin: 0;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.produto-info p {
+    margin: 10px 0;
+}
+
+.selecao {
+    margin: 20px 0;
+}
+
+.selecao label {
+    margin-right: 10px;
+}
+
+.quantidade {
+    margin: 20px 0;
+}
+
+.quantidade input {
+    width: 50px;
+    text-align: center;
+}
+
+.botao-comprar {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.botao-comprar:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+.entrega {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.entrega h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10% 10%;
+}
+
+.formulario {
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.botao-finalizar {
+    display: block;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao-finalizar:hover {
+    background-color: #0056b3;
+}
